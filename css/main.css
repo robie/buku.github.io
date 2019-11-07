@@ -1,0 +1,520 @@
+/*
+
+	Template Author : pixelhint.com
+	Author Email    : contact@pixelhint.com
+	
+	
+	*****************************************
+	
+	
+	- Header
+	- Billboard
+	- Services
+	- Call To Action
+	- Testimonials
+	- Footer
+	
+*/
+
+
+
+
+/*  Fonts  */
+@font-face {
+    font-family: 'LatoRegular';
+    src: url('../fonts/Lato-Regular.eot');
+    src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Regular.woff') format('woff'),
+         url('../fonts/Lato-Regular.ttf') format('truetype'),
+         url('../fonts/Lato-Regular.svg#LatoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LatoBold';
+    src: url('../fonts/Lato-Bold.eot');
+    src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato-Bold.woff') format('woff'),
+         url('../fonts/Lato-Bold.ttf') format('truetype'),
+         url('../fonts/Lato-Bold.svg#LatoBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HoneyLight';
+    src: url('../fonts/honeyscript-light-webfont.eot');
+    src: url('../fonts/honeyscript-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/honeyscript-light-webfont.woff') format('woff'),
+         url('../fonts/honeyscript-light-webfont.ttf') format('truetype'),
+         url('../fonts/honeyscript-light-webfont.svg#honey_scriptlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+/*  Header  */
+header{
+	width: 100%;
+	height: 100px;
+	/*background: #f4c995;*/
+	background-color: rgba(255, 255, 255, .1);
+	position: fixed;
+	z-index: 9999;
+}
+
+header .h_logo{
+	float: left;
+	margin-top: 20px;
+}
+
+header nav{
+	float: right;
+	margin-top: 42px;
+	overflow: hidden;
+}
+header nav ul li{
+	float: left;
+	margin-left: 30px;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	font-family: 'LatoBold', arial;
+	font-weight: bold;
+	font-size: 16px;
+	color: #fef8f1;
+	letter-spacing: 1px;
+}
+
+header nav ul li a:hover{
+	color: #ffffff;
+}
+
+
+
+
+/*  Billboard  */
+.billboard{
+	width: 100%;
+	height: 600px;
+	background: #ffffff url('../img/billboard_bg.jpg') no-repeat fixed;
+}
+
+
+.caption{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 270px;
+}
+
+.caption .cap_title{
+	font-family: 'LatoBold', arial;
+	font-weight: Bold;
+	font-size: 40px;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+
+.caption .cap_desc{
+	font-family: 'HoneyLight';
+	font-size: 50px;
+	color: #ffffff;
+	margin-top: 10px;
+}
+
+
+
+.main{
+	height: 50000px;
+}
+
+
+/*  Services  */
+.services{
+	margin-bottom: 80px;
+}
+
+.services .S_icons{
+	margin-top: -80px;
+	padding-left: 64px;
+	margin-bottom: 30px;
+}
+
+.services hr.sp{
+	display: inline-block;
+	width: 230px;
+	height: 10px;
+	border: 0;
+	background: url('../img/separator.png') no-repeat;
+	margin-bottom: 75px;
+	margin-left: -4px;
+}
+
+.services img{
+	margin-left: -4px;
+}
+
+.services .desc{
+	width: 100%;
+	overflow: hidden;
+}
+
+.services .desc li{
+	list-style: none;
+	float: left;
+	width: 235px;
+	height: auto;
+	text-align: center;
+	margin-right: 155px;
+}
+
+.services .desc li:first-child{
+	margin-left: 22px;
+}
+
+.services .desc li:last-child{
+	margin-right: 0;
+}
+
+.services .desc li h3{
+	font-family: 'LatoBold', arial;
+	font-weight: bold;
+	font-size: 25px;
+	color: #646363;
+	margin-bottom: 30px;
+}
+
+.services .desc li p{
+	font-family: 'LatoRegular', arial;
+	font-size: 14px;
+	color: #7e7e7e;
+	line-height: 20px;
+}
+
+
+
+/* Call To Action Style */
+.call_to_action{
+	width: 100%;
+	height: 460px;
+	background-color: #f7f7f7;
+	overflow: hidden;
+	margin-bottom: 80px;
+}
+
+.call_to_action img{
+	width: 578px;
+	margin-top: 73px;
+	margin-left: -99px;
+	float: left;
+}
+.call_to_action .cta_desc{
+	width: 580px;
+	float: right;
+	margin-top: 76px;
+}
+
+.call_to_action h3{
+	font-family: 'LatoBold', arial;
+	font-weight: bold;
+	color: #646363;
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+	margin-bottom: 30px;
+}
+
+.call_to_action p{
+	font-family: 'LatoRegular', arial;
+	color: #7e7e7e;
+	font-size: 16px;
+	letter-spacing: .5px;
+	line-height: 25px;
+	margin-bottom: 50px;
+}
+
+.call_to_action a.cta_btn{
+	padding: 15px 40px;
+	display: inline-block;
+	color: #fff;
+	font-family: "LatoBold", arial;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-decoration: none;
+
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-o-border-radius: 2px;
+
+	background-color: #eba151;
+
+	box-shadow: 0 3px 0 #cd8335;
+	-moz-box-shadow: 0 3px 0 #cd8335;
+	-webkit-box-shadow: 0 3px 0 #cd8335;
+	-o-box-shadow: 0 3px 0 #cd8335;
+}
+
+.call_to_action a.cta_btn:hover{
+	background: #e69b4c;
+}
+
+.client_testimonials{
+
+}
+
+.client_testimonials h3{
+	color: #636363;
+	font-family: "LatoBold", arial;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 60px;
+}
+
+
+
+
+/*  Testimonials  */
+
+.testimonials{
+	display: inline-block;
+	width: 260px;
+	height: auto;
+	background: #f9f8f8;
+	position: relative;
+	padding: 30px 20px;
+	margin-right: 76px;
+	margin-bottom: 120px;
+	color: #909090;
+	font-family: "LatoRegular", arial;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.testimonials:last-child{
+	margin-right: 0;
+}
+
+.testimonials blockquote{
+	margin-bottom: 25px;
+}
+
+.testimonials a.author{
+	display: block;
+	color: #7e7d7d;
+	font-family: "Latobold", arial;
+	font-weight: bold;
+	font-size: 13px;
+	margin-top: 25px;
+	text-decoration: none;
+}
+
+.testimonials a.author:hover{
+	color: #5c5c5c;
+}
+
+.testimonials img.avatar{
+	position: absolute;
+	border-radius: 100px;
+	border: 4px #ffffff solid;
+	bottom: -30px;
+	right: 0;
+}
+
+
+
+/*  Newsletter  */
+.newsletter{
+	width: 100%;
+	height: 180px;
+	background: #eba151 url('../img/newsletter_pat.png') repeat;
+	background-position: 0 -20px;
+	overflow: hidden;
+	position: relative;
+}
+
+.newsletter p{
+	width: 330px;
+	color: #fff;
+	font-family: "LatoBold", arial;
+	font-size: 35px;
+	font-weight: bold;
+	text-transform: uppercase;
+	float: left;
+	margin-top: 50px;
+	line-height: 40px;
+}
+
+.newsletter .sub_form{
+	float: right;
+	margin-top: 57px;
+	width: 600px;
+	height: 62px;
+	background: #ffffff;
+	border-radius: 100px;
+	border: 2px #e19646 solid;
+}
+
+.newsletter .email_field,
+.newsletter .name_field{
+	border: none;
+	outline: none;
+	background: #ffffff;
+	width: 180px;
+	height: 60px;
+	padding: 0 20px;
+	color: #949494;
+	font-family: "LatoRegular", arial;
+	font-size: 14px;
+
+}
+
+
+.newsletter .email_field::-webkit-input-placeholder,
+.newsletter .name_field::-webkit-input-placeholder {
+   color: #d3d2d2;
+}
+
+.newsletter .email_field:-moz-placeholder ,/* Firefox 18- */
+.newsletter .name_field:-moz-placeholder { /* Firefox 18- */
+   color: #d3d2d2;  
+}
+
+.newsletter .email_field::-moz-placeholder , /* Firefox 19+ */
+.newsletter .name_field::-moz-placeholder {  /* Firefox 19+ */
+   color: #d3d2d2;  
+}
+
+.newsletter .email_field:-ms-input-placeholder,  
+.newsletter .name_field:-ms-input-placeholder {  
+   color: #d3d2d2;  
+} 
+
+.newsletter .email_field{
+	border-top-left-radius: 100px;
+	border-bottom-left-radius: 100px;
+	border-right: 1px #e4e4e4 solid; 
+}
+
+.newsletter .name_field{
+	padding-right: 0; 
+}
+
+.newsletter .submit_nl{
+	height: 40px;
+	padding: 0 40px;
+	border: 0;
+	color: #fdfdfd;
+	font-family: "LatoBold", arial;
+	font-size: 17px;
+	font-weight: bold;
+	background-color: #575351;
+	float: right;
+	margin-right: 10px;
+	margin-top: 11px;
+	outline: none;
+ 
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+}
+
+.newsletter .submit_nl:hover{
+	cursor: pointer;
+	background: #4f4c49;
+}
+
+
+
+/*  Footer  */
+footer{
+	width: 100%;
+	padding: 80px 0;
+	background-color: #393939;
+	text-align: center;
+}
+
+footer nav{
+	width: 100%;
+}
+
+footer nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 40px 0 20px 0;
+}
+
+footer nav ul li a{
+	text-decoration: none;
+	color: #a5a5a5;
+	font-family: "LatoBold", arial;
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 20px;
+	letter-spacing: .5px;
+}
+
+
+footer hr.footer_sp{
+	width: 370px;
+	height: 1px;
+	background-color: #333;
+	border: none;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+footer .rights{
+	color: #a5a5a5;
+	font-family: "LatoRegular", arial;
+	font-size: 13px;
+	letter-spacing: .5px;
+}
+
+footer .rights a{
+	font-family: 'Latobold', arial;
+	font-weight: bold;
+	color: #777777;
+	text-decoration: none;
+}
+
+
+footer nav ul li a:hover,
+footer .rights a:hover{
+	color: #ffffff;
+}
+
+
+
+/*  General CSS*/
+.wrapper{
+	width: 1060px;
+	height: auto;
+	margin: 0 auto;
+}
+
+
+footer nav ul li a,
+footer .rights a,
+header nav ul li a,
+.call_to_action a.cta_btn,
+.testimonials a.author,
+.newsletter .submit_nl{
+	transition: .2s linear;
+	-webkit-transition: .2s linear;
+	-moz-transition: .2s linear;
+	-o-transition: .2s linear;
+}
